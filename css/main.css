@@ -115,6 +115,12 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.list-nav :hover,
+.list-nav :focus {
+  color: var(--blu-color);
+  outline: var(--blu-color);
+}
+
 .list-nav__link {
   font-style: normal;
   font-weight: 500;
@@ -123,12 +129,6 @@ header {
   letter-spacing: 0.02em;
   color: var(--black-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-nav :hover,
-.list-nav :focus {
-  color: var(--blu-color);
-  outline: var(--blu-color);
 }
 
 .list-nav-page {
@@ -171,8 +171,7 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head-cont__link:hover,
-.head-cont__link:focus {
+.head-cont__link:hover, .head-cont__link:focus {
   color: var(--blu-color);
   outline: var(--blu-color);
 }
@@ -244,8 +243,7 @@ footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address:hover,
-.address:focus {
+.address:hover, .address:focus {
   color: var(--blu-color);
   outline: var(--blu-color);
 }
@@ -260,8 +258,7 @@ footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.con-foot:hover,
-.con-foot:focus {
+.con-foot:hover, .con-foot:focus {
   color: var(--blu-color);
   outline: var(--blu-color);
 }
@@ -311,8 +308,7 @@ footer h2 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__link:hover,
-.footer-social__link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--blu-color);
   outline: var(--blu-color);
 }
@@ -465,8 +461,7 @@ footer h2 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.timate-socials__link:hover,
-.timate-socials__link:focus {
+.timate-socials__link:hover, .timate-socials__link:focus {
   background-color: var(--blu-color);
   color: var(--white-color);
   outline: var(--blu-color);
@@ -606,8 +601,7 @@ footer h2 {
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   outline: 1px solid var(--blu-color);
   fill: var(--blu-color);
 }
@@ -655,8 +649,7 @@ footer h2 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-filter__button:hover,
-.list-filter__button:focus {
+.list-filter__button:hover, .list-filter__button:focus {
   background-color: var(--blu-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -701,8 +694,7 @@ footer h2 {
   justify-content: center;
 }
 
-.modal-close-button:hover,
-.modal-close-button:focus {
+.modal-close-button:hover, .modal-close-button:focus {
   background-color: var(--blu-color);
   fill: var(--white-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -750,6 +742,13 @@ footer h2 {
   border-radius: 4px;
 }
 
+.modal__input:hover, .modal__input:focus {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--blu-color);
+  outline-width: 0;
+  outline: none;
+}
+
 .input__icon {
   position: absolute;
   left: 15px;
@@ -763,14 +762,6 @@ footer h2 {
 .modal__input:focus + .input__icon {
   fill: #2196f3;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__input:hover,
-.modal__input:focus {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--blu-color);
-  outline-width: 0;
-  outline: none;
 }
 
 .lable-modal {
@@ -801,8 +792,7 @@ footer h2 {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__comment:hover,
-.modal__comment:focus {
+.modal__comment:hover, .modal__comment:focus {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--blu-color);
   outline-width: 0;
@@ -819,6 +809,7 @@ footer h2 {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .checkbox__text::before {
@@ -849,10 +840,6 @@ footer h2 {
   margin-bottom: calc(-1 * var(--margin-filter));
 }
 
-.project__list:hover .project__text {
-  transform: translateY(0);
-}
-
 .project__card {
   position: relative;
   overflow: hidden;
@@ -871,6 +858,10 @@ footer h2 {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 300ms linear;
+}
+
+.project__list:hover .project__text {
+  transform: translateY(0);
 }
 
 .project h3 {
@@ -898,8 +889,7 @@ footer h2 {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project__list:hover,
-.project__list:focus {
+.project__list:hover, .project__list:focus {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
