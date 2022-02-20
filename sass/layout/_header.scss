@@ -1,0 +1,97 @@
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  outline: 1px solid #ececec;
+}
+
+/*---------------------------- LOGO---------------------------- */
+
+.logo {
+  margin-right: 93px;
+}
+
+.logo :hover,
+.logo :focus {
+  color: var(--blu-color);
+  outline: var(--blu-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.web {
+  color: var(--blu-color);
+}
+
+/*---------------------------- Кнопки навигации---------------------------- */
+.head-con {
+  display: flex;
+  align-items: center;
+}
+
+.list-nav :nth-child(-n + 2) {
+  margin-right: 25px;
+}
+.list-nav {
+  display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-nav__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-nav :hover,
+.list-nav :focus {
+  color: var(--blu-color);
+  outline: var(--blu-color);
+}
+.list-nav-page {
+  position: relative;
+}
+.list-nav-page::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background-color: var(--blu-color);
+  left: 0;
+  bottom: -32px;
+  border-radius: 2px;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.head-cont__item + .head-cont__item {
+  margin-left: 50px;
+}
+
+.list-head-cont {
+  display: flex;
+}
+.head-cont-item {
+  align-items: center;
+}
+.head-cont__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--grey-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.head-cont__link:hover,
+.head-cont__link:focus {
+  color: var(--blu-color);
+  outline: var(--blu-color);
+}
+.head-cont__envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.head-cont__smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
