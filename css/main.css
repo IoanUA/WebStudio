@@ -387,17 +387,6 @@ footer h2 {
   margin-left: 10px;
 }
 
-:root {
-  --blaсk-color: #212121;
-  --blu-color: #2196f3;
-  --grey-color: #757575;
-  --white-color: #ffffff;
-  --background-grey: #2f303a;
-  --background-filter: #f5f4fa;
-  --icon-color: #afb1b8;
-  --margin-filter: 30px;
-}
-
 .advantage {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -925,5 +914,16 @@ footer h2 {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+:root {
+  --blaсk-color: #212121;
+  --blu-color: #2196f3;
+  --grey-color: #757575;
+  --white-color: #ffffff;
+  --background-grey: #2f303a;
+  --background-filter: #f5f4fa;
+  --icon-color: #afb1b8;
+  --margin-filter: 30px;
 }
 /*# sourceMappingURL=main.css.map */
