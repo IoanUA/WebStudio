@@ -39,10 +39,11 @@
   color: var(--grey-color);
 }
 .project__list {
-  flex-basis: calc(100 / 3 - var(--margin-filter));
+  width: 100%;
+  // flex-basis: calc(100 / 3 - var(--margin-filter));
   margin-left: var(--margin-filter);
   margin-bottom: var(--margin-filter);
-  width: 370px;
+  // width: 370px;
 
   background-color: var(--white-color);
   border: 1px solid #eeeeee;
@@ -56,6 +57,12 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - var(--margin-filter));
+  }
+    @media screen and (min-width: 1200px){
+     width:  calc(100% / 3 - var(--margin-filter));
+    }
 }
 
 .project__list h3 {

@@ -1,16 +1,34 @@
 .section-filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+      padding-bottom: 94px;
+    
+  }
 }
 .list-filter {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 30px;
+  justify-content: start;
+  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    
+    justify-content: center;
+  }
+    @media screen and(min-width:1200px){
+      margin-bottom: 50px;
+    }
 }
+
 .list-filter__item + .list-filter__item {
   margin-left: 8px;
 }
+
+
 .list-filter__button {
+
+  margin-bottom: 15px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
