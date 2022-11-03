@@ -1,7 +1,12 @@
 .timate {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
+  @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  
 }
 .timate__title {
   margin-bottom: 50px;
@@ -11,6 +16,75 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+
+
+.person {
+  // display: flex;
+  
+  
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -30px;
+  }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      display: flex;
+      margin-left: -30px;
+    }
+}
+
+// .person__list+.person__list {
+//   margin-left: 30px;
+// }
+ .person__list{
+   width: 100%;
+margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  }
+ }
+
+
+.person-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.person__name {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--blaсk-color);
+}
+
+.person__text {
+
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+
+.person__list {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+
+
 .timate-socials__list {
   display: flex;
   justify-content: center;
@@ -43,42 +117,4 @@
   height: 20px;
   fill: currentColor;
 }
-.person__text {
-  margin-bottom: 16px;
-}
-.person {
-  display: flex;
-}
 
-.person__list + .person__list {
-  margin-left: 30px;
-}
-.person-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.person__name {
-  margin-bottom: 10px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--blaсk-color);
-}
-.person__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--grey-color);
-}
-.person__list {
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}

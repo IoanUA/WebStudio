@@ -1,5 +1,9 @@
 .jobs {
+  display: none;
   padding-bottom: 94px;
+  @media screen and (min-width: 1200px){
+    display: contents;
+  }
 }
 .jobs__title {
   margin-bottom: 50px;

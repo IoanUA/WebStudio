@@ -1,8 +1,11 @@
 .advantage {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (min-width: 1200px){
+      padding-top: 94px;
+  padding-bottom: 94px;
+  }
+
 }
 
 .advantage__list {
@@ -53,6 +56,7 @@
   text-transform: uppercase;
 }
 .advantage__text {
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
