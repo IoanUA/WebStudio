@@ -290,10 +290,6 @@ footer {
   color: var(--white-color);
 }
 
-.list-address :nth-child(1n) {
-  margin-bottom: 9px;
-}
-
 .address__list {
   margin-bottom: 60px;
   text-align: center;
@@ -301,6 +297,7 @@ footer {
 
 .address__item {
   display: block;
+  margin-bottom: 9px;
 }
 
 .address {
@@ -435,7 +432,7 @@ footer h2 {
   justify-content: center;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: calc(30/16);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
