@@ -3,11 +3,11 @@ footer {
   padding-bottom: 60px;
   background-color: var(--background-grey);
 }
+
 .foot-logo {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   justify-content: center;
 
@@ -74,18 +74,40 @@ footer h2 {
   text-transform: uppercase;
   color: var(--white-color);
 }
+
+.footer-social-section{
+  @media screen and (min-width: 1200px){
+  margin-right: 0;
+    
+  }
+}
 .footer-social__icon {
   width: 20px;
   height: 20px;
 }
 .footer-contacts-contain {
-  // display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px){ 
+  justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
 }
-// .footer-address-contain{
-// justify-content: center;
 
-// }
+
+  @media screen and (min-width: 1200px) {
+// display: flex;
+align-items: baseline;
+
+  }
+}
+.footer-address-contain{
+@media screen and (min-width: 768px){
+  margin-left: 76px;
+
+}
+@media screen and (min-width: 1200px){
+  margin-left: 0;
+}
+}
 
 
 .footer-social__list {
@@ -97,9 +119,19 @@ footer h2 {
   display: inline-block;
   
 }
+.footer-social-section{
+  @media screen and (min-width: 768px){
+    margin-right: 89px;
+   
+  }
+    @media screen and (min-width: 1200px){
+      margin: 0 auto;
+    }
+}
 .footer-social-section h2 {
   margin-bottom: 20px;
   // margin-left: 70px;
+  
 }
 .footer-social__link {
   
@@ -127,15 +159,24 @@ footer h2 {
 }
 /* ----------------footer-contain-form------------- */
 
-// .footer-contain-form {
-//   // margin-left: 93px;
- 
-// }
+.footer-contain-form {
+  
+  @media screen and (min-width: 768px){
+margin-left: 166px;
+  }
+ @media screen and (min-width: 1200px){
+ margin-left: 0;
+   display: block;
+ }
+}
 
 .imput-subscribe-block {
-  // display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  align-items: baseline;
+  }
 }
 .footer-subscribe-text {
   text-align: center;
@@ -146,9 +187,13 @@ footer h2 {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px){
+ text-align: start;
+  }
 }
   // .footer-form{
   //   justify-content: center;
+    
   // }
 .subscribe-imput {
   font-size: 16px;
@@ -159,7 +204,6 @@ footer h2 {
 
   color: rgba(255, 255, 255, 0.6);
 margin-bottom: 20px;
-  // width: 358px;
   width: 100%;
   height: 50px;
   margin-right: 12px;
@@ -170,11 +214,17 @@ margin-bottom: 20px;
   border-radius: 5px;&:focus {
   outline: 0;
 }
+@media screen and (min-width: 768px) {
+  width: 450px;
+}
+@media screen and (min-width: 1200px){
+  width: 358px;
+}
 }
 
 .subscribe-button {
   margin-left: auto;
-margin-right: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;

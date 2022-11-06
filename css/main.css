@@ -79,6 +79,7 @@ button {
 }
 
 .hero__order {
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87px;
@@ -340,13 +341,41 @@ footer h2 {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social-section {
+    margin-right: 0;
+  }
+}
+
 .footer-social__icon {
   width: 20px;
   height: 20px;
 }
 
-.footer-contacts-contain {
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer-contacts-contain {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts-contain {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address-contain {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address-contain {
+    margin-left: 0;
+  }
 }
 
 .footer-social__list {
@@ -356,6 +385,18 @@ footer h2 {
 
 .footer-social__item {
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-section {
+    margin-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-section {
+    margin: 0 auto;
+  }
 }
 
 .footer-social-section h2 {
@@ -387,9 +428,29 @@ footer h2 {
 }
 
 /* ----------------footer-contain-form------------- */
+@media screen and (min-width: 768px) {
+  .footer-contain-form {
+    margin-left: 166px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contain-form {
+    margin-left: 0;
+    display: block;
+  }
+}
+
 .imput-subscribe-block {
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .imput-subscribe-block {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-subscribe-text {
@@ -401,6 +462,12 @@ footer h2 {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-text {
+    text-align: start;
+  }
 }
 
 .subscribe-imput {
@@ -422,6 +489,18 @@ footer h2 {
 
 .subscribe-imput:focus {
   outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-imput {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-imput {
+    width: 358px;
+  }
 }
 
 .subscribe-button {
