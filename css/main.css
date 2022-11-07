@@ -357,6 +357,7 @@ footer h2 {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    height: 132px;
   }
 }
 
