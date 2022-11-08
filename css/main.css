@@ -357,13 +357,13 @@ footer h2 {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    height: 132px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contacts-contain {
     align-items: baseline;
+    height: 132px;
   }
 }
 
