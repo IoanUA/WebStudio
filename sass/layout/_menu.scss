@@ -15,8 +15,10 @@
 // }
 
 .mobile-menu-section {
+    
     position: fixed;
-    width: 480px;
+
+    max-width: 480px;
     height: 796px;
     left: 0px;
     top: 0px;
@@ -59,6 +61,10 @@
 }
 }
 
+// .mobile-contacts-sectoin{
+//     margin-bottom: 0 ;
+// }
+
 
 .mobile-list-cont{
     margin-left: 25px;
@@ -89,13 +95,28 @@
 
 
     .mobail-socials__list{
-        margin-left: 25px;
         display: flex;
+        flex-wrap: wrap;
+        margin-left: 25px;
+        margin-bottom: 48px;
     }
 
     .mobail-social__item + .mobail-social__item{
         margin-left: 20px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        
+
     }
+    // .mobail-social__link + .mobail-social__link{
+    //     position: absolute;
+    //         width: 22px;
+    //         height: 0px;
+    //         left: 214px;
+    //         top: 726px;
+        
+    //         border: 1px solid rgba(33, 33, 33, 0.2);
+    //         transform: rotate(90deg);
+    // }
         .mobail-social__link{
             font-weight: 500;
                 font-size: 18px;

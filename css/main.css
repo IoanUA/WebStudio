@@ -1240,7 +1240,7 @@ footer h2 {
 
 .mobile-menu-section {
   position: fixed;
-  width: 480px;
+  max-width: 480px;
   height: 796px;
   left: 0px;
   top: 0px;
@@ -1306,12 +1306,15 @@ footer h2 {
 }
 
 .mobail-socials__list {
-  margin-left: 25px;
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  margin-bottom: 48px;
 }
 
 .mobail-social__item + .mobail-social__item {
   margin-left: 20px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobail-social__link {
