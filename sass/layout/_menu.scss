@@ -100,29 +100,30 @@
     }
 
 
+
     .mobail-socials__list{
         display: flex;
         flex-wrap: wrap;
         margin-left: 25px;
         margin-bottom: 48px;
-    }
-
-    .mobail-social__item + .mobail-social__item{
-        margin-left: 20px;
-        border-left: 1px solid rgba(33, 33, 33, 0.2);
-        
+        gap: 10px;
 
     }
-    // .mobail-social__link + .mobail-social__link{
-    //     position: absolute;
-    //         width: 22px;
-    //         height: 0px;
-    //         left: 214px;
-    //         top: 726px;
+
+
+          .mobail-social__item+.mobail-social__item::before{
+          content:'';
+        // margin-left: 10px;
+            margin-right: 10px;
+            width: 22px;
+            height: 0px;
+            left: 135px;
+            top: 726px;
         
-    //         border: 1px solid rgba(33, 33, 33, 0.2);
-    //         transform: rotate(90deg);
-    // }
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+          }
+   
         .mobail-social__link{
                 font-size: 18px;
                 line-height: calc(22/18);

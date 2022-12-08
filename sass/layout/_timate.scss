@@ -24,7 +24,6 @@
 
 
 .person {
-  // display: flex;
   
   
   @media screen and (min-width: 768px) {
@@ -39,9 +38,7 @@
     }
 }
 
-// .person__list+.person__list {
-//   margin-left: 30px;
-// }
+
  .person__list{
    width: 100%;
 margin-bottom: 30px;

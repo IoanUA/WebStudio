@@ -886,6 +886,7 @@ footer h2 {
   margin-bottom: 30px;
   justify-content: start;
   flex-wrap: wrap;
+  column-gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -898,10 +899,6 @@ footer h2 {
   .list-filter {
     margin-bottom: 50px;
   }
-}
-
-.list-filter__item + .list-filter__item {
-  margin-left: 8px;
 }
 
 .list-filter__button {
@@ -1321,11 +1318,18 @@ footer h2 {
   flex-wrap: wrap;
   margin-left: 25px;
   margin-bottom: 48px;
+  gap: 10px;
 }
 
-.mobail-social__item + .mobail-social__item {
-  margin-left: 20px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+.mobail-social__item + .mobail-social__item::before {
+  content: '';
+  margin-right: 10px;
+  width: 22px;
+  height: 0px;
+  left: 135px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .mobail-social__link {

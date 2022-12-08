@@ -12,6 +12,7 @@
   margin-bottom: 30px;
   justify-content: start;
   flex-wrap: wrap;
+  column-gap: 8px;
   @media screen and(min-width:768px) {
     
     justify-content: center;
@@ -21,11 +22,13 @@
     }
 }
 
-.list-filter__item + .list-filter__item {
-  margin-left: 8px;
-}
+// .list-filter__item + .list-filter__item {
+//   margin-left: 8px;
+// }
 
-
+// .list-filter__item{
+ 
+// }
 .list-filter__button {
 
   margin-bottom: 15px;
