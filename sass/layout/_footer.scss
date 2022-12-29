@@ -10,7 +10,9 @@ footer {
   margin-right: auto;
   display: flex;
   justify-content: center;
-
+  @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
 }
 
 .web-blu {
@@ -26,6 +28,10 @@ footer {
 .address__list{
 margin-bottom: 60px;
 text-align: center;
+@media screen and (min-width: 1200px) {
+text-align: start;
+  }
+
 }
 .address__item{
 display: block;
@@ -33,7 +39,6 @@ margin-bottom: 9px;
 }
 
 .address {
- 
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -73,6 +78,9 @@ footer h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
 }
 
 .footer-social-section{
@@ -123,7 +131,6 @@ height: 132px;
 .footer-social-section{
   @media screen and (min-width: 768px){
     margin-right: 89px;
-   
   }
     @media screen and (min-width: 1200px){
       margin: 0 auto;

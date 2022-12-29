@@ -100,9 +100,16 @@ button {
 }
 
 header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   outline: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 /*---------------------------- LOGO---------------------------- */
@@ -312,6 +319,12 @@ footer {
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .foot-logo {
+    justify-content: start;
+  }
+}
+
 .web-blu {
   color: var(--blu-color);
 }
@@ -323,6 +336,12 @@ footer {
 .address__list {
   margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list {
+    text-align: start;
+  }
 }
 
 .address__item {
@@ -368,6 +387,12 @@ footer h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  footer h2 {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -562,13 +587,20 @@ footer h2 {
 
 .advantage {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage {
     padding-top: 94px;
     padding-bottom: 94px;
+    text-align: start;
   }
 }
 
@@ -610,6 +642,12 @@ footer h2 {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage__title {
+    text-align: start;
+  }
+}
+
 .advantage__text {
   margin-bottom: 30px;
   font-style: normal;
@@ -620,9 +658,15 @@ footer h2 {
   color: var(--grey-color);
 }
 
+@media screen and (min-width: 768px) {
+  .advantage__text {
+    margin-bottom: 0;
+  }
+}
+
 .timate {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background: #f5f4fa;
 }
 
@@ -634,7 +678,7 @@ footer h2 {
 }
 
 .timate__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.17;
@@ -642,10 +686,11 @@ footer h2 {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .timate__title {
+    margin-bottom: 50px;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: calc(42/36);
   }
 }
 
@@ -743,14 +788,15 @@ footer h2 {
   fill: currentColor;
 }
 
-.jobs {
-  display: none;
-  padding-bottom: 94px;
+@media screen and (max-width: 1200px) {
+  .jobs {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .jobs {
-    display: contents;
+    padding-bottom: 94px;
   }
 }
 
@@ -793,7 +839,7 @@ footer h2 {
 
 .clients {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -809,11 +855,12 @@ footer h2 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .clients__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }

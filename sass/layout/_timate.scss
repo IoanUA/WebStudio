@@ -1,6 +1,6 @@
 .timate {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background: #f5f4fa;
   @media screen and (min-width: 1200px) {
       padding-top: 94px;
@@ -9,15 +9,16 @@
   
 }
 .timate__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
-      line-height: 1.16;
+      line-height: calc(42/36);
   }
 }
 
@@ -40,8 +41,8 @@
 
 
  .person__list{
-   width: 100%;
-margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 @media screen and (min-width: 768px) {
   width: calc(100% / 2 - 30px);
   margin-left: 30px;

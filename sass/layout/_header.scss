@@ -1,8 +1,12 @@
 header {
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   outline: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
 
 //   @media screen and (min-width: 1200px) {
 
